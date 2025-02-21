@@ -1,8 +1,17 @@
 const express = require("express");
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 app = express();
 
-const port = proccess.env.PORT || 3000;
+const port = process.env.PORT || 3000;
+
+
+
+
+
+
+app.get("/api/contacts", (req, res) => {
+    res.send("Get all contact")
+});
 
 
 
@@ -11,18 +20,6 @@ const port = proccess.env.PORT || 3000;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-app.listen(port, () =>
-    {
-        console.log(`listening to ${port}`)
-    })
+app.listen(port, () => {
+    console.log(`listening to ${port}`)
+})
