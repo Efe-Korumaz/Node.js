@@ -4,14 +4,22 @@ app = express();
 
 const port = process.env.PORT || 3000;
 
-
-
+let contacts = 
+[
+    [name = 'Sara', age = 24],
+    [name = 'james', age = 17]
+]
 
 
 
 app.get("/api/contacts", (req, res) => {
-    res.send("Get all contact")
+    res.send(contacts)
 });
+
+app.send("/api/contacts", (req, res) => 
+    {
+        
+    })
 
 
 
