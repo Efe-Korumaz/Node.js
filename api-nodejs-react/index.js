@@ -5,9 +5,9 @@ const app = express();
 app.use(express.json());
 
 const courses = [
-    { id: 1, name: "name1" },
-    { id: 2, name: "name2" },
-    { id: 3, name: "name3" }
+    { id: 1, name: "sarah" },
+    { id: 2, name: "sasha" },
+    { id: 3, name: "sam" }
 ];
 
 app.get("/", (req, res) => {
