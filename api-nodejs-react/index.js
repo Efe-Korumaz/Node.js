@@ -52,7 +52,7 @@ app.put('/api/courses/:id', (req, res) => {
             
 
     const {error} = validateCourse(req.body); //result.error
-    if (error) return res.status(400).send(error.details[0].message); // Send the specific error message
+    if (error) return res.status(400).send(error.details[0].message); 
     
 
     //update course

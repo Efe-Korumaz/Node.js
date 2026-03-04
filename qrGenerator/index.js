@@ -3,8 +3,8 @@ const QRCode = require("qrcode")
 
 let content = 
 {
-    name: "my glorious king Lebron James",
-    job: "een goat zijn"
+    name: "Emirhan",
+    job: "bum"
 }
 
 //zet data om naar een string
